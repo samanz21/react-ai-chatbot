@@ -14,41 +14,23 @@ This project is a simple AI chatbot built with **React** and Google’s **Gemini
 - **Google GenAI** SDK (`@google/genai`)
 - **CSS Modules** for styling
 
-## 📂 Project Structure
-src/
-├── components/
-│ ├── chat/
-│ │ └── Chat.jsx
-│ ├── Control/
-│ │ └── Control.jsx
-│ └── Loader/
-│ └── Loader.jsx
-├── App.jsx
-├── App.module.css
-public/
-└── chatbot.png
-
-bash
-Copy
-Edit
-
 ## 🔑 Setup Instructions
 
 ### 1. Clone the Repository
 git clone https://github.com/your-username/ai-chatbot-react.git
 cd ai-chatbot-react
 
-###2. Install Dependencies
+### 2. Install Dependencies
 npm install
 
-###3. Create Environment Variable File
+### 3. Create Environment Variable File
 Create a .env file in the root directory and add your Google AI API key:
 VITE_GOOGLE_AI_API_KEY=your_google_ai_api_key_here
 
-###4. Run the Development Server
+### 4. Run the Development Server
 npm run dev
 
-###5. Open in Browser
+### 5. Open in Browser
 Visit http://localhost:5173 to use the chatbot.
 
 💡 How It Works
