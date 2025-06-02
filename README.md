@@ -33,7 +33,8 @@ npm run dev
 ### 5. Open in Browser
 Visit http://localhost:5173 to use the chatbot.
 
-💡 How It Works
+
+## 💡 How It Works
 The app initializes a GoogleGenAI instance with your API key.
 
 Messages are stored in the messages state and displayed in the chat window.
