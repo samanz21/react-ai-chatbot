@@ -1,12 +1,63 @@
-# React + Vite
+# AI Chatbot using React and Gemini-2.0-Flash
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple AI chatbot built with **React** and Google’s **Gemini-2.0-Flash** model via the **@google/genai** SDK. It allows users to interact with an AI model in real-time.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- Interactive chat interface with message history
+- Real-time responses using Gemini-2.0-Flash
+- React-based with modular components
+- Loading indicators for smooth UX
+- Error handling for failed requests
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Technologies Used
+- **React** (Vite)
+- **Google GenAI** SDK (`@google/genai`)
+- **CSS Modules** for styling
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
+src/
+├── components/
+│ ├── chat/
+│ │ └── Chat.jsx
+│ ├── Control/
+│ │ └── Control.jsx
+│ └── Loader/
+│ └── Loader.jsx
+├── App.jsx
+├── App.module.css
+public/
+└── chatbot.png
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+bash
+Copy
+Edit
+
+## 🔑 Setup Instructions
+
+### 1. Clone the Repository
+git clone https://github.com/your-username/ai-chatbot-react.git
+cd ai-chatbot-react
+
+###2. Install Dependencies
+npm install
+
+###3. Create Environment Variable File
+Create a .env file in the root directory and add your Google AI API key:
+VITE_GOOGLE_AI_API_KEY=your_google_ai_api_key_here
+
+###4. Run the Development Server
+npm run dev
+
+###5. Open in Browser
+Visit http://localhost:5173 to use the chatbot.
+
+💡 How It Works
+The app initializes a GoogleGenAI instance with your API key.
+
+Messages are stored in the messages state and displayed in the chat window.
+
+On sending a message, it checks if a chat session exists. If not, it creates one with the user’s history.
+
+The AI’s response is fetched and added to the messages.
+
+A loader is displayed during API calls, and error handling is in place.
